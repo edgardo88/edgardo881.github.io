@@ -1,0 +1,312 @@
+/*
+Colors used:
+Text Color (Dark Gray): #2b2b2b;
+Primary Color (Purple): #357b70;
+Secondary Color (Orange): #e0b354;
+ */
+
+
+:root{
+    /* primary brand colors*/
+    --auga green: #2eb8c2;
+    --light green: #099ca6;
+    --dark green: #489c79;
+    --background-color: #0b5394;
+    --white: #ffffff;
+    --blue: #3751ed;
+}
+
+/*Gobal text styling(line ht,font size and height*/
+
+:root{
+    
+    --h1-size:          30px;
+    --h2-size:          24px;
+    --h3-size:          18px;
+    --font-heavy:       800;
+    --font-light:       700;
+    --font-bold:        20.6;
+    --line-large:       1.6;
+    --size-button:      16px;
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+.page-header {
+  display: flex;
+  width: 100%;
+  padding: 2%;
+}
+
+.page-header__item {
+  flex: 0 1 200px;
+}
+
+.page-header .page-header__item:last-child {
+  flex-grow: 1;
+  text-align: right;
+}
+
+.navigation-list {
+  list-style-type: none;
+}
+
+.navigation-list li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+
+
+}
+
+body {
+    font-family: 'Akshar', sans-serif;
+    font-weight: var(--font-bold);
+    font-size:16px;
+    line-height: var(--line-large);
+    padding-left: 20px;
+}
+
+h1 {
+    font-size: var(--h1-size);
+    font-weight: var(--font-light);
+}
+
+h2 {
+    font-size: var(--h2-size)
+    font-weight: var(--font-light);
+}
+
+h3 {
+    font-size: var(--h3-size)
+    font-weight: var(--font-light);
+}   
+
+.svg {
+    text-decoration: none;
+}
+
+/*
+clicable links to be colored green at all times
+ */
+a {
+    color: var(--blue);
+}
+
+/*
+once clicked and revist same page the links will turn to color below
+ */
+a:visited {
+    color: var(--light green);
+}
+
+/*
+no underline when hovering and able to tab through sections
+ */
+a:hover, a:focus {
+    text-decoration: none;
+}
+
+/*
+once clicked it will turn green untill visited again
+ */
+a:active {
+    /* selected link */
+    color: var(--dark green);
+}
+
+.profile {
+  text-align: center;
+  align-content: center;
+}
+
+.enjoy-list {
+  list-style-type: none;
+  padding-right: 3%;
+  padding-bottom: 1%;
+}
+
+#profile-text {
+  padding: auto 20%;
+}
+
+
+button, .button {
+    /* overwrites browser defaults and resets the border */
+    border: none;
+    /* takes the font from the outer container */
+    font-family: inherit;
+    /* styles the background color, font color, and text decoration (underline, etc.) of the button */
+    color: var(--white);
+    font-size: var(--size-button);
+    background-color: var(--background-color);
+    text-decoration: none;
+    text-align: center;
+    /*adds spacing to the button */
+    padding: 10px;
+    border-radius: 3px;
+    /* gives the button a bottom border with a width of 2px, a type of solid. and a color in RGBA format */
+    border-bottom: 2px solid rgba(0, 0, 0.3);
+    line-height: 1.5;
+    transition: 0.2s opacity;
+}
+
+
+button:hover, button:focus, .button:hover, .button:focus {
+/* lets the mouse appear as a hand when hovering over the button */
+cursor: pointer;
+/* reduces the opacity of the button to 80% */
+opacity: 0.8;
+}
+
+
+.navigation-list__item--active {width: 450px
+    text-decoration: none;
+}
+
+
+.navigation-list li {
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.profile__portrait {
+  float: left;width: 200px;
+  margin-right: 40px;height:200px;border-radius: 50%
+}
+
+ .profile {
+  max-width: 700px;
+  margin: 70px auto;
+  text-align: center;
+  /* display: flex;
+  align-items: right;
+  height: 50%; */
+}
+
+
+.page-footer {
+    clear: both;
+    display: flex;
+    flex-direction: column;
+    text-align:center;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.enjoy-list {
+  list-style: none;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 300px 300px;
+}
+
+.grid__item {
+  background-color: lightgray;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.grid__item:last-child {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+@keyframes bird-move {
+  from {transform: translate(0px, 50px);}
+  to {transfrom: translate(0px, 80px);}
+}
+#path200, #path202, #path204, #path210, #path212, #path216  {
+  animation: 4s bird-move infinite alternate linear;
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes color-change {
+  0% {
+    fill: #edc655;
+  }
+  50% {
+    fill: #fcffad;
+  }
+  100% {
+    fill: #f76414;
+  }
+}
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+  to {
+    transform: translate(200px, 50px);
+  }
+}
+
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
+  }
+  to {
+    transform: translate(100px, 48px);
+  }
+}
+
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+} 
+
+@media all and (max-width: 500px) {
+  .project-list {
+    grid-template-columns: 1fr;
+  }
+}
+@media all and (min-width: 500px) and (max-width: 750px) {
+  .project-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media all and (max-width: 750px) {
+  .project-list {
+    grid-gap: 10px;
+  }

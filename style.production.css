@@ -1,0 +1,438 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+:root{
+    /* primary brand colors*/
+}
+
+/*Gobal text styling(line ht,font size and height*/
+
+
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.page-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 2%;
+}
+
+.page-header__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 200px;
+          flex: 0 1 200px;
+}
+
+.page-header .page-header__item:last-child {
+  -webkit -box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: right;
+}
+
+.navigation-list {
+  list-style-type: none;
+}
+
+.navigation-list li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+
+
+
+
+body {
+    font-family: 'Akshar', sans-serif;
+    font-weight: 20.6;
+    font-size:16px;
+    line-height: 1.6;
+    padding-left: 20px;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.svg {
+    text-decoration: none;
+}
+
+/*
+clicable links to be colored green at all times
+ */
+a {
+    color: #3751ed;
+}
+
+/*
+once clicked and revist same page the links will turn to color below
+ */
+a:visited {
+    color: undefined;
+}
+
+a:hover {
+
+  text-decoration: none;
+}
+
+
+/*
+no underline when hovering and able to tab through sections
+ */
+a:hover, a:focus {
+    text-decoration: none;
+}
+
+/*
+once clicked it will turn green untill visited again
+ */
+a:active {
+    /* selected link */
+    color: undefined;
+}
+
+.profile {
+  text-align: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.enjoy-list {
+  list-style-type: none;
+  padding-right: 3%;
+  padding-bottom: 1%;
+}
+
+#profile-text {
+  padding: auto 20%;
+}
+
+
+button {
+    /* overwrites browser defaults and resets the border */
+    border: none;
+    /* takes the font from the outer container */
+    font-family: inherit;
+    /* styles the background color, font color, and text decoration (underline, etc.) of the button */
+    color: #ffffff;
+    font-size: 16px;
+    background-color: #3751ed;
+    text-decoration: none;
+    text-align: center;
+    /*adds spacing to the button */
+    padding: 10px;
+    border-radius: 3px;
+    /* gives the button a bottom border with a width of 2px, a type of solid. and a color in RGBA format */
+    border-bottom: 2px solid rgba(0, 0, 0.3);
+    line-height: 1.5;
+    -webkit-transition: 0.2s opacity;
+    -o-transition: 0.2s opacity;
+    transition: 0.2s opacity;
+}
+
+
+.button {
+    /* overwrites browser defaults and resets the border */
+    border: none;
+    /* takes the font from the outer container */
+    font-family: inherit;
+    /* styles the background color, font color, and text decoration (underline, etc.) of the button */
+    color: #ffffff;
+    font-size: 16px;
+    background-color: #3751ed;
+    text-decoration: none;
+    text-align: center;
+    /*adds spacing to the button */
+    padding: 10px;
+    border-radius: 3px;
+    /* gives the button a bottom border with a width of 2px, a type of solid. and a color in RGBA format */
+    border-bottom: 2px solid rgba(0, 0, 0.3);
+    line-height: 1.5;
+    -webkit-transition: 0.2s opacity;
+    -o-transition: 0.2s opacity;
+    transition: 0.2s opacity;
+}
+
+
+button:hover, button:focus, .button:hover, .button:focus {
+/* lets the mouse appear as a hand when hovering over the button */
+cursor: pointer;
+/* reduces the opacity of the button to 80% */
+opacity: 0.8;
+}
+
+
+.navigation-list__item--active {width: 450px;
+    text-decoration: none;
+}
+
+
+.navigation-list li {
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.profile__portrait {
+  float: left;width: 200px;
+  margin-right: 40px;height:200px;border-radius: 50%
+}
+
+ .profile {
+  max-width: 700px;
+  margin: 70px auto;
+  text-align: center;
+  /* display: flex;
+  align-items: right;
+  height: 50%; */
+}
+
+
+.page-footer {
+    clear: both;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align:center;
+}
+
+.social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+
+.enjoy-list {
+  list-style: none;
+  text-align: center;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 300px 300px 300px;
+  grid-template-columns: 300px 300px 300px;
+  -ms-grid-rows: 300px 300px;
+  grid-template-rows: 300px 300px;
+}
+
+.grid > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+}
+
+.grid > *:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+}
+
+.grid > *:nth-child(3) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+}
+
+.grid > *:nth-child(4) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+}
+
+.grid > *:nth-child(5) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+}
+
+.grid > *:nth-child(6) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+}
+
+.grid__item {
+  background-color: lightgray;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.grid__item:last-child {
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  -ms-grid-column-span: 0;
+  grid-column-end: 3;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  -ms-grid-row-span: 2;
+  grid-row-end: 3;
+}
+
+@-webkit-keyframes bird-move {
+  from {-webkit-transform: translate(0px, 50px);transform: translate(0px, 50px);}
+  to {transfrom: translate(0px, 80px);}
+}
+
+@keyframes bird-move {
+  from {-webkit-transform: translate(0px, 50px);transform: translate(0px, 50px);}
+  to {transfrom: translate(0px, 80px);}
+}
+#path200, #path202, #path204, #path210, #path212, #path216  {
+  -webkit-animation: 4s bird-move infinite alternate linear;
+          animation: 4s bird-move infinite alternate linear;
+}
+
+.sun {
+  -webkit-animation: 4s color-change infinite alternate linear;
+          animation: 4s color-change infinite alternate linear;
+}
+
+@-webkit-keyframes color-change {
+  0% {
+    fill: #edc655;
+  }
+  50% {
+    fill: #fcffad;
+  }
+  100% {
+    fill: #f76414;
+  }
+}
+
+@keyframes color-change {
+  0% {
+    fill: #edc655;
+  }
+  50% {
+    fill: #fcffad;
+  }
+  100% {
+    fill: #f76414;
+  }
+}
+@-webkit-keyframes cloud-move {
+  from {
+    -webkit-transform: translate(0, 50px);
+            transform: translate(0, 50px);
+  }
+  to {
+    -webkit-transform: translate(200px, 50px);
+            transform: translate(200px, 50px);
+  }
+}
+@keyframes cloud-move {
+  from {
+    -webkit-transform: translate(0, 50px);
+            transform: translate(0, 50px);
+  }
+  to {
+    -webkit-transform: translate(200px, 50px);
+            transform: translate(200px, 50px);
+  }
+}
+
+@-webkit-keyframes cloud-move-reverse {
+  from {
+    -webkit-transform: translate(446px, 48px);
+            transform: translate(446px, 48px);
+  }
+  to {
+    -webkit-transform: translate(100px, 48px);
+            transform: translate(100px, 48px);
+  }
+}
+
+@keyframes cloud-move-reverse {
+  from {
+    -webkit-transform: translate(446px, 48px);
+            transform: translate(446px, 48px);
+  }
+  to {
+    -webkit-transform: translate(100px, 48px);
+            transform: translate(100px, 48px);
+  }
+}
+
+
+.cloud-front {
+  -webkit-animation: 30s cloud-move infinite alternate linear;
+          animation: 30s cloud-move infinite alternate linear;
+}
+
+.cloud-back {
+  -webkit-animation: 34s cloud-move-reverse infinite alternate linear;
+          animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+@media all and (max-width: 500px) {
+  .project-list {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+@media all and (min-width: 500px) and (max-width: 750px) {
+  .project-list {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media all and (max-width: 750px) {
+  .project-list {
+    grid-gap: 10px;
+    }
+  }
